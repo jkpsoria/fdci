@@ -4,9 +4,9 @@ const img = $("img");
 //   alert(`There are a total of ${img.length} images on this page.`)
 // );
 
-// $(document).ready(function () {
-//   alert(`There are a total of ${img.length} images on this page.`);
-// });
+$(document).ready(function () {
+  alert(`There are a total of ${img.length} images on this page.`);
+});
 
 //target the hero-text
 const pTag = $("#hero-text");
