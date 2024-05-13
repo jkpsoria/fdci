@@ -11,6 +11,10 @@
       type="image/x-icon"
     />
     <title>Jiki's Web</title>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      defer
+    ></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/script.js" defer></script>
   </head>
@@ -32,13 +36,14 @@
       <section class="h-screen hero flex justify-evenly items-center">
         <div>
           <h1 class="text-3xl font-bold">Hello, FDCI!</h1>
-          <p class="text-lg w-80 mt-6">
+          <p class="text-lg w-80 mt-6" id="hero-text">
             I'm Jiki, a web developer. I aim to create
             <span class="text-indigo-500">innovative</span> solutions by
             executing a consistent and
             <span class="text-indigo-500">results-driven</span> approach to
             learning and developing web applications.
           </p>
+          <!-- <button id="seeMoreBtn">See more</button> -->
         </div>
         <div class="rounded-md">
           <img
