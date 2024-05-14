@@ -37,10 +37,10 @@ button.hover(
   }
 );
 
-document.addEventListener("DOMContentLoaded", () =>
-  alert(`There are a total of ${img.length} images on this page.`)
-);
+// document.addEventListener("DOMContentLoaded", () =>
+//   alert(`There are a total of ${img.length} images on this page.`)
+// );
 
-$(document).ready(function () {
-  alert(`There are a total of ${img.length} images on this page.`);
-});
+// $(document).ready(function () {
+//   alert(`There are a total of ${img.length} images on this page.`);
+// });
