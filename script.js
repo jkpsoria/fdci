@@ -36,3 +36,27 @@ button.hover(
     $(this).css("filter", "none");
   }
 );
+
+let currentSlide = 0;
+const slides = $(".slide");
+const totalSlides = slides.length;
+
+function showSlide(index) {
+  slides.hide();
+  slides.eq(index).show();
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+  showSlide(currentSlide);
+}
+
+$("#nextBtn").click(nextSlide);
+$("#prevBtn").click(prevSlide);
+
+showSlide(currentSlide);
